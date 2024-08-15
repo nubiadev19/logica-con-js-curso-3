@@ -10,6 +10,19 @@ console.log("Tu indice de masa es: "+calcularIMC(1.60,60));
 
 //2.Crea una función que calcule el valor del factorial de un número pasado como parámetro.
 
+function calcularFactorial(numero) {
+    if(numero===1 || numero==0){
+return 1;
+    }else{
+        return numero*calcularFactorial(numero-1);
+    }
+
+}
+let numero = 5;
+let resultado = calcularFactorial(numero);
+console.log(`El factorial de ${numero} es ${resultado}`);
+
+
 /*3.Crea una función que convierta un valor en dólares, pasado como parámetro, y devuelva el valor equivalente 
 en reales(moneda brasileña,si deseas puedes hacerlo con el valor del dólar en tu .país). Para esto, 
 considera la cotización del dólar igual a R$4,80. */
